@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "dynamic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mhdhejazi/Dynamic.git",
+      "state" : {
+        "revision" : "ab9a2570862d54aed2663691bb767f881226a12f",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "qrcode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dagronf/qrcode.git",
+      "state" : {
+        "revision" : "afdd9190b25b3b6a9abc74c8824aec13f6a02357",
+        "version" : "13.9.0"
+      }
+    },
+    {
+      "identity" : "swift-qrcode-generator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dagronf/swift-qrcode-generator",
+      "state" : {
+        "revision" : "5ca09b6a2ad190f94aa3d6ddef45b187f8c0343b",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1BB1D752A099386000FD860 /* QRimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB1D742A099386000FD860 /* QRimeApp.swift */; };
+		F1BB1D772A099386000FD860 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB1D762A099386000FD860 /* ContentView.swift */; };
+		F1BB1D792A099386000FD860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BB1D782A099386000FD860 /* Assets.xcassets */; };
+		F1BB1D7C2A099386000FD860 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BB1D7B2A099386000FD860 /* Preview Assets.xcassets */; };
+		F1BB1D822A099386000FD860 /* QRime Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F1BB1D812A099386000FD860 /* QRime Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1BB1D872A099386000FD860 /* QRimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB1D862A099386000FD860 /* QRimeApp.swift */; };
+		F1BB1D892A099386000FD860 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB1D882A099386000FD860 /* ContentView.swift */; };
+		F1BB1D8B2A099387000FD860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BB1D8A2A099387000FD860 /* Assets.xcassets */; };
+		F1BB1D8E2A099387000FD860 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BB1D8D2A099387000FD860 /* Preview Assets.xcassets */; };
+		F1BB1D9A2A0993A8000FD860 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = F1BB1D992A0993A8000FD860 /* QRCode */; };
+		F1BB1D9D2A0993BA000FD860 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = F1BB1D9C2A0993BA000FD860 /* QRCode */; };
+		F1BB1DA02A09953A000FD860 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1BB1D9F2A09953A000FD860 /* Dynamic */; };
+		F1BB1DA22A099543000FD860 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1BB1DA12A099543000FD860 /* Dynamic */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1BB1D832A099386000FD860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1BB1D692A099385000FD860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1BB1D802A099386000FD860;
+			remoteInfo = "QRime Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1BB1D942A099387000FD860 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F1BB1D822A099386000FD860 /* QRime Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F13A38DA2A0997760041BFA1 /* QRime-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "QRime-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F1BB1D712A099386000FD860 /* QRime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1BB1D742A099386000FD860 /* QRimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRimeApp.swift; sourceTree = "<group>"; };
+		F1BB1D762A099386000FD860 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1BB1D782A099386000FD860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1BB1D7B2A099386000FD860 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1BB1D812A099386000FD860 /* QRime Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRime Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1BB1D862A099386000FD860 /* QRimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRimeApp.swift; sourceTree = "<group>"; };
+		F1BB1D882A099386000FD860 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1BB1D8A2A099387000FD860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1BB1D8D2A099387000FD860 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1BB1D6E2A099386000FD860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB1DA02A09953A000FD860 /* Dynamic in Frameworks */,
+				F1BB1D9A2A0993A8000FD860 /* QRCode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1BB1D7E2A099386000FD860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB1DA22A099543000FD860 /* Dynamic in Frameworks */,
+				F1BB1D9D2A0993BA000FD860 /* QRCode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1BB1D682A099385000FD860 = {
+			isa = PBXGroup;
+			children = (
+				F1BB1D732A099386000FD860 /* QRime */,
+				F1BB1D852A099386000FD860 /* QRime Watch App */,
+				F1BB1D722A099386000FD860 /* Products */,
+				F1BB1D9B2A0993BA000FD860 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1BB1D722A099386000FD860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB1D712A099386000FD860 /* QRime.app */,
+				F1BB1D812A099386000FD860 /* QRime Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1BB1D732A099386000FD860 /* QRime */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB1D742A099386000FD860 /* QRimeApp.swift */,
+				F1BB1D762A099386000FD860 /* ContentView.swift */,
+				F1BB1D782A099386000FD860 /* Assets.xcassets */,
+				F1BB1D7A2A099386000FD860 /* Preview Content */,
+			);
+			path = QRime;
+			sourceTree = "<group>";
+		};
+		F1BB1D7A2A099386000FD860 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB1D7B2A099386000FD860 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1BB1D852A099386000FD860 /* QRime Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				F13A38DA2A0997760041BFA1 /* QRime-Watch-App-Info.plist */,
+				F1BB1D862A099386000FD860 /* QRimeApp.swift */,
+				F1BB1D882A099386000FD860 /* ContentView.swift */,
+				F1BB1D8A2A099387000FD860 /* Assets.xcassets */,
+				F1BB1D8C2A099387000FD860 /* Preview Content */,
+			);
+			path = "QRime Watch App";
+			sourceTree = "<group>";
+		};
+		F1BB1D8C2A099387000FD860 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB1D8D2A099387000FD860 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1BB1D9B2A0993BA000FD860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1BB1D702A099386000FD860 /* QRime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1BB1D952A099387000FD860 /* Build configuration list for PBXNativeTarget "QRime" */;
+			buildPhases = (
+				F1BB1D6D2A099386000FD860 /* Sources */,
+				F1BB1D6E2A099386000FD860 /* Frameworks */,
+				F1BB1D6F2A099386000FD860 /* Resources */,
+				F1BB1D942A099387000FD860 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1BB1D842A099386000FD860 /* PBXTargetDependency */,
+			);
+			name = QRime;
+			packageProductDependencies = (
+				F1BB1D992A0993A8000FD860 /* QRCode */,
+				F1BB1D9F2A09953A000FD860 /* Dynamic */,
+			);
+			productName = QRime;
+			productReference = F1BB1D712A099386000FD860 /* QRime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1BB1D802A099386000FD860 /* QRime Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1BB1D912A099387000FD860 /* Build configuration list for PBXNativeTarget "QRime Watch App" */;
+			buildPhases = (
+				F1BB1D7D2A099386000FD860 /* Sources */,
+				F1BB1D7E2A099386000FD860 /* Frameworks */,
+				F1BB1D7F2A099386000FD860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QRime Watch App";
+			packageProductDependencies = (
+				F1BB1D9C2A0993BA000FD860 /* QRCode */,
+				F1BB1DA12A099543000FD860 /* Dynamic */,
+			);
+			productName = "QRime Watch App";
+			productReference = F1BB1D812A099386000FD860 /* QRime Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1BB1D692A099385000FD860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F1BB1D702A099386000FD860 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F1BB1D802A099386000FD860 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F1BB1D6C2A099385000FD860 /* Build configuration list for PBXProject "QRime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1BB1D682A099385000FD860;
+			packageReferences = (
+				F1BB1D982A0993A8000FD860 /* XCRemoteSwiftPackageReference "qrcode" */,
+				F1BB1D9E2A09953A000FD860 /* XCRemoteSwiftPackageReference "Dynamic" */,
+			);
+			productRefGroup = F1BB1D722A099386000FD860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1BB1D702A099386000FD860 /* QRime */,
+				F1BB1D802A099386000FD860 /* QRime Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1BB1D6F2A099386000FD860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB1D7C2A099386000FD860 /* Preview Assets.xcassets in Resources */,
+				F1BB1D792A099386000FD860 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1BB1D7F2A099386000FD860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB1D8E2A099387000FD860 /* Preview Assets.xcassets in Resources */,
+				F1BB1D8B2A099387000FD860 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1BB1D6D2A099386000FD860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB1D772A099386000FD860 /* ContentView.swift in Sources */,
+				F1BB1D752A099386000FD860 /* QRimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1BB1D7D2A099386000FD860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB1D892A099386000FD860 /* ContentView.swift in Sources */,
+				F1BB1D872A099386000FD860 /* QRimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1BB1D842A099386000FD860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1BB1D802A099386000FD860 /* QRime Watch App */;
+			targetProxy = F1BB1D832A099386000FD860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1BB1D8F2A099387000FD860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1BB1D902A099387000FD860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F1BB1D922A099387000FD860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QRime Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AWC3WT8C3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QRime-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = QRime;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cc.kumpelsandfriends.art.QRime;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.kumpelsandfriends.art.QRime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		F1BB1D932A099387000FD860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QRime Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AWC3WT8C3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QRime-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = QRime;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cc.kumpelsandfriends.art.QRime;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.kumpelsandfriends.art.QRime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		F1BB1D962A099387000FD860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QRime/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AWC3WT8C3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QRime;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.kumpelsandfriends.art.QRime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1BB1D972A099387000FD860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QRime/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AWC3WT8C3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QRime;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.kumpelsandfriends.art.QRime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1BB1D6C2A099385000FD860 /* Build configuration list for PBXProject "QRime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1BB1D8F2A099387000FD860 /* Debug */,
+				F1BB1D902A099387000FD860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1BB1D912A099387000FD860 /* Build configuration list for PBXNativeTarget "QRime Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1BB1D922A099387000FD860 /* Debug */,
+				F1BB1D932A099387000FD860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1BB1D952A099387000FD860 /* Build configuration list for PBXNativeTarget "QRime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1BB1D962A099387000FD860 /* Debug */,
+				F1BB1D972A099387000FD860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1BB1D982A0993A8000FD860 /* XCRemoteSwiftPackageReference "qrcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/qrcode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+		F1BB1D9E2A09953A000FD860 /* XCRemoteSwiftPackageReference "Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mhdhejazi/Dynamic.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1BB1D992A0993A8000FD860 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1BB1D982A0993A8000FD860 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCode;
+		};
+		F1BB1D9C2A0993BA000FD860 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1BB1D982A0993A8000FD860 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCode;
+		};
+		F1BB1D9F2A09953A000FD860 /* Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1BB1D9E2A09953A000FD860 /* XCRemoteSwiftPackageReference "Dynamic" */;
+			productName = Dynamic;
+		};
+		F1BB1DA12A099543000FD860 /* Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1BB1D9E2A09953A000FD860 /* XCRemoteSwiftPackageReference "Dynamic" */;
+			productName = Dynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F1BB1D692A099385000FD860 /* Project object */;
+}
