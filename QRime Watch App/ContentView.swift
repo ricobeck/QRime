@@ -12,13 +12,15 @@ import QRCode
 final class ContentViewModel: ObservableObject {
     @Published var time: String = ""
     @Published var gridData: BoolMatrix?
+    @Published var displayMode: ContentViewDisplayModes
 
     private var cancellable: AnyCancellable?
 
     init() {
         let dateFormatter : DateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"
-
+        displayMode = .normal
+        
         cancellable = Timer.publish(every: 1.0, on: .main, in: .default)
             .autoconnect()
             .sink {[weak self] _ in
@@ -32,11 +34,57 @@ final class ContentViewModel: ObservableObject {
                 }
             }
     }
+    
+    func foregroundColorForDisplayMode() -> Color {
+        switch displayMode {
+        case .normal:
+            return .accentColor
+        case .inverted:
+            return Color.black
+        case .blackOnWhite:
+            return Color.black
+        case .whiteOnBlack:
+            return Color.white
+        }
+    }
+
+    func backgroundColorForDisplayMode() -> Color {
+        switch displayMode {
+        case .normal:
+            return Color.black
+        case .inverted:
+            return .accentColor
+        case .blackOnWhite:
+            return Color.white
+        case .whiteOnBlack:
+            return Color.black
+        }
+    }
+    
+    func switchDisplayMode() {
+        switch displayMode {
+        case .normal:
+            self.displayMode = .inverted
+        case .inverted:
+            self.displayMode = .blackOnWhite
+        case .blackOnWhite:
+            self.displayMode = .whiteOnBlack
+        case .whiteOnBlack:
+            self.displayMode = .normal
+        }
+    }
+}
+
+enum ContentViewDisplayModes {
+    case normal
+    case inverted
+    case blackOnWhite
+    case whiteOnBlack
 }
 
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
-
+    
     var body: some View {
         if let matrix = viewModel.gridData {
             Grid(horizontalSpacing: 0, verticalSpacing: 0) {
@@ -44,12 +92,17 @@ struct ContentView: View {
                     GridRow {
                         ForEach(0 ..< matrix.dimension, id: \.self) { column in
                             Rectangle()
-                                .foregroundColor(matrix[row, column] ? .accentColor : .black)
+                                .foregroundColor(matrix[row, column] ? viewModel.foregroundColorForDisplayMode() : viewModel.backgroundColorForDisplayMode())
                                 .aspectRatio(contentMode: .fit)
                         }
                     }
                 }
-            }
+            }.gesture(
+                TapGesture()
+                    .onEnded {
+                        viewModel.switchDisplayMode()
+                    }
+            )
         } else {
             Text(viewModel.time)
         }
